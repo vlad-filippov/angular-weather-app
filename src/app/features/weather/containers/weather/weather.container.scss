@@ -1,0 +1,14 @@
+
+
+.drag-and-scroll {
+  font-size: 15px;
+  color: darkgrey;
+  position: absolute;
+  right: 10px;
+}
+
+.hourly-weather {
+  padding: 20px 0;
+  display: flex;
+  cursor: grab;
+}

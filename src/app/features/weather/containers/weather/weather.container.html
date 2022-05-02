@@ -1,0 +1,21 @@
+<app-search (searchOutput)="searchSubject.next($event)"></app-search>
+
+<div class="row">
+  <div class="col-xl-3 mb-3">
+    <app-current [weather]="weather"></app-current>
+  </div>
+
+  <div class="col-xl-9 position-relative">
+    <div class="drag-and-scroll">Grab and scroll</div>
+
+    <div *ngFor="let day of weather?.forecast?.forecastday; let i = index" class="drag-scroll-block">
+      <h4 [ngClass]="{'mt-4': !!i}">{{ day.tabName }}</h4>
+
+      <drag-scroll #nav>
+        <div class="hourly-weather">
+          <app-hour *ngFor="let hour of day.hour" [hour]="hour"></app-hour>
+        </div>
+      </drag-scroll>
+    </div>
+  </div>
+</div>

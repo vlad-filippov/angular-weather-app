@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #3e3e3e, #727272);
+  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+// Variables
+$primary: #03a9f4;
+
+// Material
+.full-width-field {
+  width: 100%;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label,
+.mat-tab-label, .mat-tab-link {
+  color: white;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline,
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background: white;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-form-field.mat-focused .mat-form-field-ripple,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background: $primary;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: $primary;
+}
+
+.mat-input-element {
+  caret-color: $primary;
+}
+
+.post {
+  position: relative;
+
+  .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 120%;
+      position: absolute;
+      left: -10%;
+      top: -10%;
+    }
+  }
+
+  .author {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+  }
+}
+
+.mat-dialog-container .post .image {
+  height: unset;
+
+  img {
+    position: unset;
+    width: 100%;
+  }
+}
+
+.mat-tab-body-content {
+  position: relative;
+}

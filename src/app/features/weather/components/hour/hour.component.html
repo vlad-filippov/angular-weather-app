@@ -1,0 +1,8 @@
+<div class="hour">
+  <div class="description">{{ hour?.condition?.text }}</div>
+  <div><i class='bx bx-sun'></i> {{ hour?.temp_c }}℃</div>
+  <div><i class='bx bx-wind'></i> {{ hour?.wind_kph }}kph</div>
+  <div><i class='bx bx-droplet' ></i> {{ hour?.humidity }}%</div>
+  <img alt="" [src]="hour?.condition?.icon" />
+  <div class="time">{{ hour?.time | date: 'HH:mm' }}</div>
+</div>

@@ -1,0 +1,18 @@
+.hour {
+  text-align: center;
+  margin: 0 20px;
+  min-width: 100px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+  .description {
+    font-size: 14px;
+    height: 70px;
+    white-space: pre-wrap;
+  }
+}

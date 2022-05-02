@@ -1,0 +1,18 @@
+.notification {
+  padding: 20px;
+  width: 100%;
+  color: white;
+  max-width: 300px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.success {
+  background: #56c856;
+  box-shadow: 0 5px 20px 0 #00800063;
+}
+
+.error {
+  background: #ff5353;
+  box-shadow: 0 5px 20px 0 #ff00005e;
+}

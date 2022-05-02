@@ -1,0 +1,8 @@
+<div class="post">
+  <div class="image">
+    <img [src]="data?.urlToImage ? data?.urlToImage : 'assets/images/no-image.jpg'" alt="" />
+  </div>
+  <p class="author">{{ data?.author }}</p>
+  <h5 class="pt-4">{{ data?.title }}</h5>
+  <p class="description">{{ data?.content }}</p>
+</div>

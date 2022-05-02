@@ -1,0 +1,12 @@
+.col-md-3 {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 50px;
+  white-space: nowrap;
+  margin-bottom: 0;
+}

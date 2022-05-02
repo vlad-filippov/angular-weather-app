@@ -1,0 +1,14 @@
+<div class="weather-block">
+  <h2>{{ weather?.location?.country }}, {{ weather?.location?.name }}</h2>
+  <p class="small">Local time: {{ weather?.location?.localtime | date: 'HH:mm' }}</p>
+
+  <hr>
+
+  <p>
+    <img alt="" [src]="weather?.current?.condition?.icon" />
+    <strong>{{ weather?.current?.condition?.text }}</strong>
+  </p>
+  <p>Temperature: <strong>{{ weather?.current?.temp_c }}℃</strong></p>
+  <p>Wind speed: <strong>{{ weather?.current?.wind_kph }} kph</strong></p>
+  <p>Humidity: <strong>{{ weather?.current?.humidity }}%</strong></p>
+</div>

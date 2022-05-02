@@ -1,0 +1,12 @@
+<div class="row">
+  <div *ngFor="let post of news$ | async" class="col-md-3" (click)="openDialog(post)">
+    <div class="post">
+      <div class="image">
+        <img [src]="post?.urlToImage ? post?.urlToImage : 'assets/images/no-image.png'" alt="" />
+      </div>
+      <p class="author">{{ post?.author }}</p>
+      <h5 class="pt-4">{{ post?.title }}</h5>
+      <p class="description">{{ post?.content }}</p>
+    </div>
+  </div>
+</div>
